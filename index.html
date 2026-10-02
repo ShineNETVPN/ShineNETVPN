@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShineNET VPN — Fast, Free & Decentralized Open-Source VPN</title>
+  <meta name="description" content="ShineNET VPN is a free, open-source Android VPN powered by decentralized V2Ray/Xray configs from ShineNETConfigs. Zero logs, high-speed encrypted tunnels, and anti-censorship DPI bypass.">
+  <meta name="keywords" content="ShineNET VPN, V2Ray, Xray, VLESS, VMess, Trojan, Shadowsocks, free VPN, open source VPN, anti-censorship, Android VPN, ShineNETConfigs">
+  <meta name="author" content="ShineNET VPN Team">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://shayanheidari01.github.io/ShineNETVPN/">
+  <meta property="og:title" content="ShineNET VPN — Your Gateway to Internet Freedom">
+  <meta property="og:description" content="High-speed, open-source VPN for Android. Zero tracking, dual-core tunneling, and decentralized community nodes.">
+  <meta property="og:image" content="assets/images/logo.png">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ShineNET VPN — Fast, Free & Decentralized VPN">
+  <meta name="twitter:description" content="Protect your online privacy with enterprise-grade encryption. Free & open-source on GitHub.">
+  <meta name="twitter:image" content="assets/images/logo.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Ambient Glow Effects -->
+  <div class="bg-ambient">
+    <div class="ambient-blob ambient-blob-1"></div>
+    <div class="ambient-blob ambient-blob-2"></div>
+    <div class="ambient-blob ambient-blob-3"></div>
+  </div>
+  <div class="bg-grid"></div>
+
+  <!-- Header Navigation -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="#" class="brand-logo">
+        <img src="assets/images/logo.png" alt="ShineNET VPN Logo">
+        <span>ShineNET<span style="color: var(--cyan-bright);">VPN</span></span>
+        <span class="brand-badge">v1.4.0</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#servers" class="nav-link">Servers & Configs</a></li>
+        <li><a href="#protocols" class="nav-link">Protocols</a></li>
+        <li><a href="#nodes" class="nav-link">Live Nodes</a></li>
+        <li><a href="#features" class="nav-link">Features</a></li>
+        <li><a href="#install" class="nav-link">Install Guide</a></li>
+        <li><a href="#faq" class="nav-link">FAQ</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="#download" class="btn btn-primary btn-sm btn-glow">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          Download APK
+        </a>
+        <button class="mobile-toggle" aria-label="Toggle navigation menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        
+        <div class="hero-content">
+          <div class="pill pill-glow-cyan">
+            <span class="pulse-dot"></span>
+            100% Free & Open-Source • No Subscriptions
+          </div>
+
+          <h1 class="hero-title">
+            Uncensor the Web. Powered by <span class="text-gradient">Open Community</span> Nodes.
+          </h1>
+
+          <p class="hero-subtitle">
+            ShineNET VPN is a modern Flutter-built Android VPN engineered to break through digital barriers. Powered by community-curated servers from <strong>ShineNETConfigs</strong> with automated low-latency smart routing.
+          </p>
+
+          <div class="hero-actions">
+            <a href="https://github.com/shayanheidari01/ShineNETVPN/releases/latest" class="btn btn-primary btn-lg btn-glow" target="_blank" rel="noopener">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              Download Latest APK
+            </a>
+            <a href="https://github.com/shayanheidari01/ShineNETVPN" class="btn btn-secondary btn-lg" target="_blank" rel="noopener">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+              </svg>
+              GitHub Source
+            </a>
+          </div>
+
+          <div class="hero-specs">
+            <div class="spec-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+              Zero Logs Policy
+            </div>
+            <div class="spec-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polygon points="10 8 16 12 10 16 10 8"></polygon>
+              </svg>
+              Dual Core (V2Ray & Aether)
+            </div>
+            <div class="spec-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>
+              </svg>
+              Smart Ping Auto-Optimization
+            </div>
+          </div>
+        </div>
+
+        <!-- Phone Visual Mockup -->
+        <div class="hero-visual">
+          <div class="phone-container">
+            <div class="phone-notch"></div>
+            <div class="phone-screen">
+              <img src="assets/images/screenshot-home.jpg" alt="ShineNET VPN Android App Interface">
+            </div>
+
+            <!-- Floating Widget 1 -->
+            <div class="floating-pill floating-pill-left">
+              <div class="float-icon" style="color: var(--emerald-400);">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                  <path d="m9 12 2 2 4-4"/>
+                </svg>
+              </div>
+              <div>
+                <div class="float-title">Protected & Encrypted</div>
+                <div class="float-desc">TLS 1.3 • AES-256-GCM</div>
+              </div>
+            </div>
+
+            <!-- Floating Widget 2 -->
+            <div class="floating-pill floating-pill-right">
+              <div class="float-icon" style="color: var(--cyan-bright);">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                </svg>
+              </div>
+              <div>
+                <div class="float-title">Optimal Node: 42ms</div>
+                <div class="float-desc">VLESS-Vision (Auto Ranked)</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Server Infrastructure Section (ShineNETConfigs) -->
+    <section class="section" id="servers">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-tag">Decentralized Infrastructure</span>
+          <h2 class="section-title">Where Our Servers Come From</h2>
+          <p class="section-desc">
+            Unlike commercial VPNs with centralized points of failure, ShineNET VPN connects to a continuous, decentralized ecosystem of high-grade proxy nodes curated and maintained at <strong>ShineNETConfigs</strong>.
+          </p>
+        </div>
+
+        <div class="configs-banner-card">
+          <div class="configs-grid">
+            <div class="configs-info">
+              <div class="pill pill-glow-cyan" style="margin-bottom: 16px;">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="2" y1="12" x2="22" y2="12"></line>
+                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                </svg>
+                Official GitHub Server Repository
+              </div>
+              <h3>Automated Subscription & Raw Config Feeds</h3>
+              <p>
+                Our servers are synchronized directly from the open-source repository. Anyone can audit the configurations, verify traffic integrity, or contribute verified nodes to bypass censorship.
+              </p>
+
+              <div class="code-box">
+                <code class="font-mono">https://raw.githubusercontent.com/shayanheidari01/ShineNETConfigs/main/configs.txt</code>
+                <button class="code-copy-btn" data-copy="https://raw.githubusercontent.com/shayanheidari01/ShineNETConfigs/main/configs.txt">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                  </svg>
+                  Copy URL
+                </button>
+              </div>
+
+              <div style="display: flex; gap: 14px; flex-wrap: wrap;">
+                <a href="https://github.com/shayanheidari01/ShineNETConfigs" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                  </svg>
+                  Browse ShineNETConfigs on GitHub
+                </a>
+              </div>
+            </div>
+
+            <div class="stats-counter-group">
+              <div class="stat-box">
+                <div class="stat-num">100%</div>
+                <div class="stat-label">Transparent & Open</div>
+              </div>
+              <div class="stat-box">
+                <div class="stat-num">&lt; 50ms</div>
+                <div class="stat-label">Low Latency Nodes</div>
+              </div>
+              <div class="stat-box">
+                <div class="stat-num">4+</div>
+                <div class="stat-label">Bypass Protocols</div>
+              </div>
+              <div class="stat-box">
+                <div class="stat-num">24/7</div>
+                <div class="stat-label">Continuous Refresh</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4-Step Architecture Workflow -->
+        <div class="workflow-grid">
+          <div class="workflow-card">
+            <div class="step-num">01</div>
+            <h4>Community Sourcing</h4>
+            <p>High-speed nodes are gathered and pooled from reputable global community networks into the <a href="https://github.com/shayanheidari01/ShineNETConfigs" target="_blank" style="color:var(--cyan-bright); text-decoration: underline;">ShineNETConfigs</a> repository.</p>
+          </div>
+          <div class="workflow-card">
+            <div class="step-num">02</div>
+            <h4>Automated Verification</h4>
+            <p>Protocols, TLS certificates, and connectivity are screened to weed out dormant nodes, ensuring only active channels remain in the subscription feed.</p>
+          </div>
+          <div class="workflow-card">
+            <div class="step-num">03</div>
+            <h4>In-App Latency Ranking</h4>
+            <p>When you open ShineNET VPN, the app measures live latency to candidate servers and ranks them in real-time right on your Android device.</p>
+          </div>
+          <div class="workflow-card">
+            <div class="step-num">04</div>
+            <h4>Instant 1-Tap Tunnel</h4>
+            <p>The client establishes an end-to-end encrypted V2Ray or Aether Edge tunnel with fallback resilience if a server experiences disruptions.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Supported Protocols Section -->
+    <section class="section" id="protocols" style="background: rgba(11, 17, 32, 0.4);">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-tag">Next-Gen Obfuscation</span>
+          <h2 class="section-title">Engineered to Defeat Deep Packet Inspection</h2>
+          <p class="section-desc">
+            Traditional VPN protocols (OpenVPN, WireGuard, IPSec) are frequently blocked by national firewalls. ShineNET VPN utilizes modern obfuscation protocols that disguise traffic as normal HTTPS web browsing.
+          </p>
+        </div>
+
+        <div class="protocols-grid">
+          
+          <div class="protocol-card">
+            <span class="protocol-badge">VLESS + XTLS</span>
+            <h3>VLESS (Vision & Reality)</h3>
+            <p>
+              Lightweight stateless protocol that eliminates TLS-in-TLS fingerprinting. VLESS Vision and Reality mimic real legitimate websites with zero recognizable protocol handshakes.
+            </p>
+            <div class="tech-tags">
+              <span class="tech-tag">XTLS-Vision</span>
+              <span class="tech-tag">Reality</span>
+              <span class="tech-tag">gRPC</span>
+              <span class="tech-tag">WebSocket</span>
+            </div>
+          </div>
+
+          <div class="protocol-card">
+            <span class="protocol-badge">TROJAN</span>
+            <h3>Trojan Protocol</h3>
+            <p>
+              Trojan bypasses advanced Deep Packet Inspection by tunneling traffic over genuine TLS 1.3 connections, appearing identical to ordinary secure HTTPS web traffic on port 443.
+            </p>
+            <div class="tech-tags">
+              <span class="tech-tag">TLS 1.3</span>
+              <span class="tech-tag">Port 443</span>
+              <span class="tech-tag">Anti-GFW</span>
+              <span class="tech-tag">SNI Camouflage</span>
+            </div>
+          </div>
+
+          <div class="protocol-card">
+            <span class="protocol-badge">VMESS</span>
+            <h3>VMess (V2Ray Core)</h3>
+            <p>
+              The original V2Ray protocol fortified with AEAD encryption. Ideal for routing traffic across Cloudflare, Fastly, and CDN edge relays with customizable path and header manipulation.
+            </p>
+            <div class="tech-tags">
+              <span class="tech-tag">AEAD Cipher</span>
+              <span class="tech-tag">CDN Relays</span>
+              <span class="tech-tag">WebSocket (WS)</span>
+              <span class="tech-tag">Dynamic Paths</span>
+            </div>
+          </div>
+
+          <div class="protocol-card">
+            <span class="protocol-badge">SHADOWSOCKS</span>
+            <h3>Shadowsocks (AEAD 2022)</h3>
+            <p>
+              High-speed, minimal overhead proxy protocol designed for maximum bandwidth utilization and ultra-low CPU power consumption on mobile battery constraints.
+            </p>
+            <div class="tech-tags">
+              <span class="tech-tag">AES-256-GCM</span>
+              <span class="tech-tag">ChaCha20-Poly1305</span>
+              <span class="tech-tag">Low Latency</span>
+              <span class="tech-tag">Battery Saver</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Interactive Live Node Explorer -->
+    <section class="section" id="nodes">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-tag">Interactive Node Inspector</span>
+          <h2 class="section-title">Explore Active Network Nodes</h2>
+          <p class="section-desc">
+            Test and inspect sample configurations currently sourced from ShineNETConfigs. Run a live latency benchmark simulation below.
+          </p>
+        </div>
+
+        <div class="node-explorer">
+          <div class="explorer-toolbar">
+            <div class="filter-tabs">
+              <button class="filter-btn active" data-filter="all">All Locations</button>
+              <button class="filter-btn" data-filter="de">🇩🇪 Germany</button>
+              <button class="filter-btn" data-filter="ca">🇨🇦 Canada</button>
+              <button class="filter-btn" data-filter="fr">🇫🇷 France</button>
+              <button class="filter-btn" data-filter="se">🇸🇪 Sweden</button>
+              <button class="filter-btn" data-filter="cdn">🏁 Anycast CDN</button>
+            </div>
+
+            <div class="explorer-actions">
+              <button class="btn btn-secondary btn-sm" id="simulatePingBtn">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="23 4 23 10 17 10"></polyline>
+                  <path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"></path>
+                </svg>
+                Benchmark Nodes
+              </button>
+            </div>
+          </div>
+
+          <!-- Dynamic Nodes List -->
+          <div class="nodes-list" id="nodesList">
+            <!-- Rendered dynamically by main.js -->
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="section" id="features">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-tag">Privacy & Performance</span>
+          <h2 class="section-title">Built with Zero Compromise</h2>
+          <p class="section-desc">
+            Designed from the ground up to guarantee user autonomy, speed, and privacy.
+          </p>
+        </div>
+
+        <div class="features-grid">
+          
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+            </div>
+            <h3>Strict Zero-Logs Policy</h3>
+            <p>
+              We do not track, collect, store, or sell any of your connection logs, DNS queries, visited websites, or original IP addresses. True privacy is built into our core philosophy.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+              </svg>
+            </div>
+            <h3>Dual Core Engine</h3>
+            <p>
+              Switch seamlessly between our high-speed native <strong>V2Ray Core</strong> and the ultra-resilient <strong>Aether Edge</strong> engine depending on your network conditions and firewall restrictions.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="2" y1="12" x2="22" y2="12"></line>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+              </svg>
+            </div>
+            <h3>Bypass Geo-Blocks & Censorship</h3>
+            <p>
+              Access social media, streaming platforms, messaging services, and news websites freely without censorship or bandwidth throttling from restrictive internet providers.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                <line x1="12" y1="18" x2="12.01" y2="18"></line>
+              </svg>
+            </div>
+            <h3>Modern Flutter Architecture</h3>
+            <p>
+              Smooth, responsive 60/120 FPS interface with a dark cyberpunk aesthetic. Highly optimized memory footprint that won't drain your phone battery or overheat your device.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18.36 6.64a9 9 0 1 1-12.73 0"></path>
+                <line x1="12" y1="2" x2="12" y2="12"></line>
+              </svg>
+            </div>
+            <h3>Automated Failover & Kill Switch</h3>
+            <p>
+              Should a server node experience instability, ShineNET VPN instantly detects drops and reroutes through the next healthiest server without exposing your unencrypted traffic.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+            </div>
+            <h3>No Account, No Sign-Up</h3>
+            <p>
+              No email addresses, no credit cards, no passwords, and no login required. Download the APK, install, and tap connect in seconds.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Installation Steps Section -->
+    <section class="section" id="install" style="background: rgba(11, 17, 32, 0.4);">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-tag">Quick Setup</span>
+          <h2 class="section-title">How to Install ShineNET VPN</h2>
+          <p class="section-desc">Get connected in three easy steps with zero complicated configurations.</p>
+        </div>
+
+        <div class="install-steps-grid">
+          
+          <div class="step-card">
+            <div class="step-header">
+              <span class="step-circle">1</span>
+              <h4>Download the APK</h4>
+            </div>
+            <p style="color: var(--text-muted); font-size: 0.95rem;">
+              Download the latest release package (<code class="font-mono" style="color: var(--cyan-400);">.apk</code>) directly from GitHub or scan the QR code below on your Android device.
+            </p>
+          </div>
+
+          <div class="step-card">
+            <div class="step-header">
+              <span class="step-circle">2</span>
+              <h4>Allow Unknown Sources</h4>
+            </div>
+            <p style="color: var(--text-muted); font-size: 0.95rem;">
+              When prompted by Android, tap Settings and enable "Allow from this source" to allow installation of the open-source client.
+            </p>
+          </div>
+
+          <div class="step-card">
+            <div class="step-header">
+              <span class="step-circle">3</span>
+              <h4>Tap Connect & Enjoy</h4>
+            </div>
+            <p style="color: var(--text-muted); font-size: 0.95rem;">
+              Open ShineNET VPN. Working servers from <strong>ShineNETConfigs</strong> load automatically. Tap the big shield button to enjoy secure browsing!
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Download CTA Hub -->
+    <section class="download-section" id="download">
+      <div class="container">
+        
+        <div class="download-box">
+          <div class="download-info">
+            <div class="pill pill-glow-green" style="margin-bottom: 16px;">
+              <span class="pulse-dot"></span>
+              Latest Stable Release: v1.4.0
+            </div>
+            <h2>Ready to Experience True Internet Freedom?</h2>
+            <p>
+              Download ShineNET VPN now for Android. Works smoothly on Android 5.0 (Lollipop) through Android 15.
+            </p>
+
+            <div class="download-buttons">
+              <a href="https://github.com/shayanheidari01/ShineNETVPN/releases/latest" class="btn btn-primary btn-lg btn-glow" target="_blank" rel="noopener">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                <div>
+                  <span>Download APK (Direct)</span>
+                  <span class="download-btn-sub">v1.4.0 • Android 5.0+ • ~50MB</span>
+                </div>
+              </a>
+
+              <a href="https://github.com/shayanheidari01/ShineNETVPN/releases" class="btn btn-secondary" target="_blank" rel="noopener">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 14 14"></polyline>
+                </svg>
+                View All Releases & Changelog
+              </a>
+            </div>
+
+            <div style="margin-top: 24px; display: flex; align-items: center; gap: 14px; font-size: 0.85rem; color: var(--text-muted);">
+              <span>Package: <strong class="font-mono" style="color: var(--cyan-400);">com.shinecloud.vpn</strong></span>
+              <span>•</span>
+              <span>License: <strong style="color: var(--text-highlight);">MIT</strong></span>
+            </div>
+          </div>
+
+          <div class="qr-box">
+            <div class="qr-canvas-wrapper" id="qrCodeContainer">
+              <!-- QR Code generated dynamically -->
+            </div>
+            <div class="qr-label">
+              <strong>Scan with your phone</strong>
+              <p>Instant APK download link on your mobile device</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section" id="faq">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-tag">Frequently Asked Questions</span>
+          <h2 class="section-title">Got Questions? We Have Answers.</h2>
+          <p class="section-desc">Everything you need to know about ShineNET VPN, our servers, and security.</p>
+        </div>
+
+        <div class="faq-grid">
+          
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>How are ShineNET VPN servers supplied and updated?</span>
+              <span class="faq-icon">▼</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Our servers are provided through our dedicated open-source repository <a href="https://github.com/shayanheidari01/ShineNETConfigs" target="_blank" style="color: var(--cyan-bright); text-decoration: underline;">ShineNETConfigs</a>. The app fetches valid V2Ray/Xray configurations from the raw configs subscription endpoint, tests latency locally on your device, and ranks the fastest working nodes automatically.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Is ShineNET VPN really 100% free? Are there any ads?</span>
+              <span class="faq-icon">▼</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Yes! ShineNET VPN is completely free, open-source under the MIT license, and has zero advertisements. There are no paid tiers, no subscription prompts, and no hidden data monetization. It is developed and maintained by digital freedom advocates.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>What protocols does ShineNET VPN support?</span>
+              <span class="faq-icon">▼</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                ShineNET VPN supports cutting-edge censorship-resistant protocols including VLESS (with XTLS Vision & Reality), Trojan (over TLS 1.3), VMess (with AEAD and WebSocket/gRPC transports), and Shadowsocks (AEAD 2022).
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Do you log my internet traffic or real IP address?</span>
+              <span class="faq-icon">▼</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                <strong>Never.</strong> We follow a strict zero-logs policy. We do not track, collect, store, or share your browsing history, visited websites, DNS queries, connection timestamps, or original IP address. For full details, please review our <a href="privacy-policy.html" style="color: var(--cyan-bright); text-decoration: underline;">Privacy Policy</a>.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Can I contribute new servers or report dead nodes?</span>
+              <span class="faq-icon">▼</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Absolutely! Anyone can submit pull requests or contribute working configurations directly to the <a href="https://github.com/shayanheidari01/ShineNETConfigs" target="_blank" style="color: var(--cyan-bright); text-decoration: underline;">ShineNETConfigs repository</a>. You can also report issues or join our community discussions on Telegram.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>What are the minimum system requirements?</span>
+              <span class="faq-icon">▼</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                ShineNET VPN runs on Android 5.0 (Lollipop) and above, requiring approximately 50MB of storage space. No root access is necessary; the app uses the official Android <code class="font-mono">VpnService</code> API to route traffic securely.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <div class="footer-brand">
+          <div class="brand-logo">
+            <img src="assets/images/logo.png" alt="ShineNET VPN Logo">
+            <span>ShineNET<span style="color: var(--cyan-bright);">VPN</span></span>
+          </div>
+          <p>
+            Your gateway to digital freedom and privacy. Free, open-source, and community-driven.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h5>Navigation</h5>
+          <ul class="footer-links">
+            <li><a href="#servers">Servers & Configs</a></li>
+            <li><a href="#protocols">Protocols</a></li>
+            <li><a href="#nodes">Live Nodes</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#download">Download APK</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Ecosystem</h5>
+          <ul class="footer-links">
+            <li><a href="https://github.com/shayanheidari01/ShineNETVPN" target="_blank" rel="noopener">App Repository</a></li>
+            <li><a href="https://github.com/shayanheidari01/ShineNETConfigs" target="_blank" rel="noopener">ShineNETConfigs</a></li>
+            <li><a href="https://github.com/shayanheidari01/ShineNETVPN/releases" target="_blank" rel="noopener">Release Notes</a></li>
+            <li><a href="https://t.me/ShineNETVPN" target="_blank" rel="noopener">Telegram Channel</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Legal & Support</h5>
+          <ul class="footer-links">
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+            <li><a href="mailto:shinenetvpn@gmail.com">shinenetvpn@gmail.com</a></li>
+            <li><a href="https://github.com/shayanheidari01/ShineNETVPN/issues" target="_blank" rel="noopener">Report Issue</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © 2026 ShineNET VPN. Released under the MIT License.
+        </div>
+        <div class="footer-legal-links">
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="terms.html">Terms</a>
+          <a href="https://github.com/shayanheidari01/ShineNETVPN/blob/main/SECURITY.md" target="_blank" rel="noopener">Security Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>
